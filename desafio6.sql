@@ -1,4 +1,4 @@
-SELECT ROUND(MIN(b.valor_plano), 2) AS faturamento_minimo,
+SELECT MIN(b.valor_plano) AS faturamento_minimo,
   ROUND(MAX(b.valor_plano), 2) AS faturamento_maximo,
   ROUND(AVG(b.valor_plano), 2) AS faturamento_medio,
   ROUND(SUM(b.valor_plano), 2) AS faturamento_total 
